@@ -116,7 +116,9 @@ namespace HLStrafe
 			LockTargetYaw(0),
 			TargetYawOverrideActive(false),
 			TargetYawOverride(0),
-			StrafeCycleFrameCount(0)
+			StrafeCycleFrameCount(0),
+			PitchOverrideActive(false),
+			PitchOverride(0)
 		{};
 
 		bool Jump;
@@ -169,6 +171,9 @@ namespace HLStrafe
 		// Constant yawspeed
 		bool ConstantYawSpeed;
 		float ConstantYawSpeedValue;
+
+		bool PitchOverrideActive;
+		double PitchOverride;
 	};
 
 	struct TraceResult {
